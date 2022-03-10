@@ -42,3 +42,31 @@ $('.edit').click(function(){
     }
 });
 
+$('.delete').click(function(){
+    var id = this.id;
+    $('.deleteBtn').attr('data-id',id);
+    $('.modal').toggleClass('opened');
+});
+
+$('.cancel').click(function(){
+    $('.modal').toggleClass('opened');
+    $('.deleteBtn').removeAttr('data_id');
+})
+$('.deleteBtn').click(function(){
+    var id = $(this).attr('data-id');
+    var message = $('.message');
+    message.each(function(){
+        var data_id = $(this).attr('data-id');
+        if(id == data_id){
+            $(this).hide();
+        }
+    });
+    var netedmessage = $('.neted-message');
+    netedmessage.each(function(){
+        var data_id = $(this).attr('data-id');
+        if(id == data_id){
+            $(this).hide();
+        }
+    });
+    $('.modal').toggleClass('opened');
+});

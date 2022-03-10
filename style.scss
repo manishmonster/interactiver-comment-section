@@ -205,6 +205,9 @@ body{
     top: 0;
     overflow: auto;
     background-color: hsla(211, 10%, 45%, 0.56);
+    &.opened{
+        display: block;
+    }
 }
 .deleteModal {
     width: 300px;
@@ -227,11 +230,12 @@ body{
             text-transform: uppercase;
             font-weight: 600;
             color: var(--white);
+            cursor: pointer;
         }
         .cancel{
             background: var(--grayishBlue);
         }
-        .delete{
+        .deleteBtn{
             background: var(--highAction);
         }
     }

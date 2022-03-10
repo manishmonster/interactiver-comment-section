@@ -255,6 +255,10 @@ body {
   background-color: rgba(103, 114, 126, 0.56);
 }
 
+.modal.opened {
+  display: block;
+}
+
 .deleteModal {
   width: 300px;
   background: var(--white);
@@ -286,13 +290,14 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   color: var(--white);
+  cursor: pointer;
 }
 
 .deleteModal .footer .cancel {
   background: var(--grayishBlue);
 }
 
-.deleteModal .footer .delete {
+.deleteModal .footer .deleteBtn {
   background: var(--highAction);
 }
 
