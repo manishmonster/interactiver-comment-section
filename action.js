@@ -70,3 +70,9 @@ $('.deleteBtn').click(function(){
     });
     $('.modal').toggleClass('opened');
 });
+
+$.getJSON("./data.json", function(json) {
+    var currentUser = json.currentUser;
+    var comments = json.comments;
+    $('.chatreply .avatar img').attr('src',currentUser.image.png);
+});
