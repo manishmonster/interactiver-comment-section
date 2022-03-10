@@ -72,6 +72,7 @@ $(document).on('click','.deleteBtn', function(){
 });
 
 $.getJSON("./data.json", function(json) {
+    console.log(json);
     var currentUser = json.currentUser;
     var username =  currentUser.username;
     var comments = json.comments;
