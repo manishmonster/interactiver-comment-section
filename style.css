@@ -242,6 +242,60 @@ body {
   margin: -1em auto 1.5em;
 }
 
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  background-color: rgba(103, 114, 126, 0.56);
+}
+
+.deleteModal {
+  width: 300px;
+  background: var(--white);
+  padding: 1.5em;
+  border-radius: .5em;
+  margin: calc(50vh - 91.5px) auto;
+}
+
+.deleteModal .body {
+  padding: 0.7em 0;
+}
+
+.deleteModal .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1em;
+}
+
+.deleteModal .footer button {
+  width: 100%;
+  padding: .5em;
+  border: 0;
+  border-radius: .5em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.deleteModal .footer .cancel {
+  background: var(--grayishBlue);
+}
+
+.deleteModal .footer .delete {
+  background: var(--highAction);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
