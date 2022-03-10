@@ -145,18 +145,27 @@ body{
         }
     }
 }
-.chatreply {
-    
-    textarea{
-        border-radius: .5em;
-        border: .1em solid var(--ightgray);
-        height: 8em;
-        resize: none;
-        width: 100%;
-        cursor: pointer;
-        &:focus-visible{
-            border-color: var(--highColor);
-        }
+
+.addComment{
+    border-radius: .5em;
+    border: .1em solid var(--ightgray);
+    height: 5em;
+    resize: none;
+    width: 100%;
+    padding: 1em;
+    cursor: pointer;
+    &:focus-visible{
+        border-color: var(--highColor);
+    }
+}
+.body {
+    padding-top: 1em;
+    .addComment{
+        width: calc(100% - 2em);
+        margin-bottom: 1em;
+    }
+    .send{
+        float: right;
     }
 }
 .neted-message {

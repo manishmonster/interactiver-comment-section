@@ -182,17 +182,31 @@ body {
   background-image: url("./images/icon-reply-hover.svg");
 }
 
-.chatreply textarea {
+.addComment {
   border-radius: .5em;
   border: 0.1em solid var(--ightgray);
-  height: 8em;
+  height: 5em;
   resize: none;
   width: 100%;
+  padding: 1em;
   cursor: pointer;
 }
 
-.chatreply textarea:focus-visible {
+.addComment:focus-visible {
   border-color: var(--highColor);
+}
+
+.body {
+  padding-top: 1em;
+}
+
+.body .addComment {
+  width: calc(100% - 2em);
+  margin-bottom: 1em;
+}
+
+.body .send {
+  float: right;
 }
 
 .neted-message {
