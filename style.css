@@ -22,7 +22,7 @@ p {
 }
 
 body {
-  background: var(--ightgray);
+  background: var(--verylightgray);
 }
 
 .message, .chatreply {
@@ -137,7 +137,7 @@ body {
 }
 
 .delete {
-  color: var(--highColor);
+  color: var(--highAction);
 }
 
 .delete span {
@@ -193,6 +193,18 @@ body {
 
 .chatreply textarea:focus-visible {
   border-color: var(--highColor);
+}
+
+.neted-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: calc( 1.8em + 6.5px);
+}
+
+.vl {
+  border-left: 2px solid var(--ightgray);
+  margin-left: calc( 1.8em + 6.5px);
 }
 
 .send {

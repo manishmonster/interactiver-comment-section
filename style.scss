@@ -19,7 +19,7 @@ p{
     font-size: 16px;
 }
 body{
-    background: var(--ightgray);
+    background: var(--verylightgray);
 }
 .message,.chatreply{
     background: var(--white);
@@ -102,7 +102,7 @@ body{
     }
 }
 .delete{
-    color: var(--highColor);
+    color: var(--highAction);
     span{
         width: 12px;
         height: 14px;
@@ -159,7 +159,14 @@ body{
         }
     }
 }
-
+.neted-message {
+    display: flex;
+    gap: calc( 1.8em + 6.5px);
+}
+.vl {
+    border-left: 2px solid var(--ightgray);
+    margin-left: calc( 1.8em + 6.5px);
+}
 .send {
     height: 2.5em;
     padding: 0.5em 1em;
