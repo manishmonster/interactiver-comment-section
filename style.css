@@ -13,9 +13,216 @@
 
 * {
   font-family: 'Kumbh Sans', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 p {
   font-size: 16px;
+}
+
+body {
+  background: var(--ightgray);
+}
+
+.message, .chatreply {
+  background: var(--white);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1.5em;
+  border-radius: .5em;
+  margin: 1.5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+}
+
+.vote {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background: var(--ightgray);
+  padding: 0.3em;
+  text-align: center;
+  border-radius: .5em;
+  margin-right: 1.5em;
+}
+
+.vote span {
+  display: inline-block;
+}
+
+.vote .plus, .vote .minus {
+  cursor: pointer;
+}
+
+.vote .plus {
+  width: 11px;
+  height: 11px;
+  background-image: url("./images/icon-plus.svg");
+}
+
+.vote .plus:hover {
+  background-image: url("./images/icon-plus-hover.svg");
+}
+
+.vote .minus {
+  width: 11px;
+  height: 3px;
+  background-image: url("./images/icon-minus.svg");
+}
+
+.vote .minus:hover {
+  background-image: url("./images/icon-minus-hover.svg");
+}
+
+.vote .votes {
+  margin: 1em auto;
+  font-weight: 550;
+  color: var(--highColor);
+}
+
+.avatar {
+  width: 70px;
+  height: 50px;
+  margin-right: 1.5em;
+}
+
+.avatar img {
+  width: 100%;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.left, .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+}
+
+.left .avatar, .right .avatar {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+}
+
+.left span, .left a, .right span, .right a {
+  line-height: 2em;
+}
+
+.you {
+  background: var(--highColor);
+  color: var(--white);
+  padding: 0.1em 0.2em .3em;
+}
+
+.actions {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.actions span {
+  display: inline-block;
+}
+
+.delete {
+  color: var(--highColor);
+}
+
+.delete span {
+  width: 12px;
+  height: 14px;
+  background-image: url("./images/icon-delete.svg");
+}
+
+.delete:hover {
+  color: var(--red);
+}
+
+.delete:hover span {
+  background-image: url("./images/icon-delete-hover.svg");
+}
+
+.edit, .reply {
+  color: var(--highColor);
+}
+
+.edit:hover, .reply:hover {
+  color: var(--color);
+}
+
+.edit span {
+  width: 14px;
+  height: 14px;
+  background-image: url("./images/icon-edit.svg");
+}
+
+.edit:hover span {
+  background-image: url("./images/icon-edit-hover.svg");
+}
+
+.reply span {
+  width: 14px;
+  height: 14px;
+  background-image: url("./images/icon-reply.svg");
+}
+
+.reply:hover span {
+  background-image: url("./images/icon-reply-hover.svg");
+}
+
+.chatreply textarea {
+  border-radius: .5em;
+  border: 0.1em solid var(--ightgray);
+  height: 8em;
+  resize: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.chatreply textarea:focus-visible {
+  border-color: var(--highColor);
+}
+
+.send {
+  height: 2.5em;
+  padding: 0.5em 1em;
+  margin-left: 1.5em;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border: 0;
+  color: var(--white);
+  background: var(--highColor);
+  border-radius: .5em;
+  cursor: pointer;
+}
+
+.send:focus, .send:hover {
+  background: var(--color);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.containor {
+  max-width: 735px;
+  margin: auto auto;
 }
 /*# sourceMappingURL=style.css.map */

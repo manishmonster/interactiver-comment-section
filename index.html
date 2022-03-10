@@ -8,19 +8,51 @@
   
   <title>Frontend Mentor | Interactive comments section</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  <div class="containor">
+    <div class="chat">
+      <div class="message">
+        <div class="vote">
+          <span class="plus"></span>
+          <span class="votes">12</span>
+          <span class="minus"></span>
+        </div>
+        <div class="contains">
+          <div class="head">
+            <div class="left">
+              <div class="avatar">
+                <img src="images/avatars/image-juliusomo.png" alt="Default avatar ">
+              </div>
+              <span class="name">amyrobson <span class="you">you</span></span>
+              
+              <span class="time">1 month ago</span>
+            </div>
+            <div class="right">
+              <a href="" class="actions delete"><span></span> Delete</a><a href="" class="actions edit"><span></span> Edit</a><a href="" class="actions reply"><span></span> Reply</a>
+            </div>
+            
+          </div>
+          <div class="body">
+            <p>Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</p>
+          </div>
+        </div>
+      </div>
+      <div class="chatreply">
+        <div class="avatar">
+          <img src="images/avatars/image-juliusomo.png" alt="Default avatar ">
+        </div>
+        <textarea name="" id="" cols="30" rows="10" class="addComment"></textarea><button class="send">Send</button>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </div>
   <!-- Pull dynamic content from the data.json file -->
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+ 
 </body>
 </html>
