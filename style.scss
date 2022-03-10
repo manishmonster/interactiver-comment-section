@@ -182,7 +182,9 @@ body{
         background: var(--color);
     }
 }
-
+.chatreply.generated{
+    margin: -1em auto 1.5em;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 .containor{

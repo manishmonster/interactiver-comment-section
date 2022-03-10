@@ -14,7 +14,7 @@
   <div class="containor">
     <div class="chat">
 
-      <div class="message">
+      <div class="message" data-id="3">
         <div class="vote">
           <span class="plus"></span>
           <span class="votes">12</span>
@@ -31,7 +31,7 @@
               <span class="time">1 month ago</span>
             </div>
             <div class="right">
-              <a href="" class="actions delete"><span></span> Delete</a><a href="" class="actions edit"><span></span> Edit</a><a href="" class="actions reply"><span></span> Reply</a>
+              <a href="#" class="actions delete"><span></span> Delete</a><a href="#" class="actions edit"><span></span> Edit</a><a href="#" class="actions reply" id="3"><span></span> Reply</a>
             </div>
             
           </div>
@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="multiple-message">
-        <div class="message">
+        <div class="message" data-id="2">
           <div class="vote">
             <span class="plus"></span>
             <span class="votes">12</span>
@@ -58,7 +58,7 @@
                 <span class="time">1 month ago</span>
               </div>
               <div class="right">
-                <a href="" class="actions delete"><span></span> Delete</a><a href="" class="actions edit"><span></span> Edit</a><a href="" class="actions reply"><span></span> Reply</a>
+                <a href="#" class="actions delete"><span></span> Delete</a><a href="#" class="actions edit"><span></span> Edit</a><a href="#" class="actions reply" id="2"><span></span> Reply</a>
               </div>
               
             </div>
@@ -70,7 +70,7 @@
         <div class="neted-message">
           <div class="vl"></div>
           <div class="messages">
-            <div class="message">
+            <div class="message" data-id="1">
               <div class="vote">
                 <span class="plus"></span>
                 <span class="votes">12</span>
@@ -87,7 +87,7 @@
                     <span class="time">1 month ago</span>
                   </div>
                   <div class="right">
-                    <a href="" class="actions delete"><span></span> Delete</a><a href="" class="actions edit"><span></span> Edit</a><a href="" class="actions reply"><span></span> Reply</a>
+                    <a href="#" class="actions delete"><span></span> Delete</a><a href="#" class="actions edit"><span></span> Edit</a><a href="#" class="actions reply" id="1"><span></span> Reply</a>
                   </div>
                   
                 </div>
@@ -114,7 +114,11 @@
     </div>
   </div>
   <!-- Pull dynamic content from the data.json file -->
-  
+  <script
+			  src="https://code.jquery.com/jquery-3.6.0.js"
+			  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			  crossorigin="anonymous"></script>
+  <script src="action.js"></script>
  
 </body>
 </html>
