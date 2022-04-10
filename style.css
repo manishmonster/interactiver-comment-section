@@ -356,6 +356,9 @@ body {
   .mobile-hide {
     display: none;
   }
+  .mobile-view {
+    display: block;
+  }
   .containor {
     margin: 0.5em 1em;
   }
@@ -374,5 +377,22 @@ body {
   .neted-message {
     gap: calc( .4em + 6.5px);
   }
+  .addComment {
+    max-width: calc(100% - 2em);
+  }
+}
+
+.bottom-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1em;
+}
+
+.bottom-section .avatar {
+  height: 40px;
 }
 /*# sourceMappingURL=style.css.map */
