@@ -72,7 +72,6 @@ $(document).on('click','.deleteBtn', function(){
 });
 
 $.getJSON("./data.json", function(json) {
-    console.log(json);
     var currentUser = json.currentUser;
     var username =  currentUser.username;
     var comments = json.comments;
@@ -93,9 +92,9 @@ $.getJSON("./data.json", function(json) {
                                 </div>\
                                 <span class="name">'+comment.user.username;
                                 if(username == comment.user.username){
-                                    html1 += '<span class="you">you</span></span>';
+                                    html1 += '<span class="you">you</span>';
                                 }
-                                html1 +=' <span class="time">'+comment.createdAt+'</span>\
+                                html1 +='</span> <span class="time">'+comment.createdAt+'</span>\
                             </div>\
                             <div class="right">';
                             if(username == comment.user.username){
@@ -132,9 +131,9 @@ $.getJSON("./data.json", function(json) {
                                             </div>\
                                             <span class="name">'+reply.user.username;
                                             if(username == reply.user.username){
-                                                html += '<span class="you">you</span></span>';
+                                                html += '<span class="you">you</span>';
                                             }
-                                            html +=' <span class="time">'+reply.createdAt+'</span>\
+                                            html +='</span> <span class="time">'+reply.createdAt+'</span>\
                                         </div>\
                                         <div class="right">';
                                         if(username == reply.user.username){
