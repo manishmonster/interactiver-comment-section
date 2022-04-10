@@ -10,7 +10,7 @@ $(document).on('click','.reply', function(){
                 <div class="avatar">\
                   <img src="images/avatars/image-juliusomo.png" alt="Default avatar ">\
                 </div>\
-                <textarea name="" id="" cols="30" rows="10" class="addComment"></textarea><button class="send">Send</button>\
+                <textarea name="" id="" cols="30" rows="10" class="addComment" placeholder="Add a commet...."></textarea><button class="send">Send</button>\
               </div>\
             </div>';
                 $(this).after(html);
@@ -32,7 +32,7 @@ $(document).on('click','.edit', function(){
                 var messageContain = $(this).find('div.contains div.body p.messageContain');
                 
                 var data = messageContain.text();
-                var html = '<textarea name="" data-id="'+id+'" id="" class="addComment editcomment">'+data+'</textarea><button class="send update" data-id="'+id+'">Update</button>';
+                var html = '<textarea name="" data-id="'+id+'" id="" class="addComment editcomment" placeholder="Add a commet....">'+data+'</textarea><button class="send update" data-id="'+id+'">Update</button>';
                 messageContain.after(html);
                 messageContain.css('visibility','hidden');
                 messageContain.css('height','0');
