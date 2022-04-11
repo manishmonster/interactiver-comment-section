@@ -380,19 +380,17 @@ body {
   .addComment {
     max-width: calc(100% - 2em);
   }
-}
-
-.bottom-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 1em;
-}
-
-.bottom-section .avatar {
-  height: 40px;
+  .bottom-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 1em;
+  }
+  .bottom-section .avatar {
+    height: 40px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

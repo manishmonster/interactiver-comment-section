@@ -302,13 +302,12 @@ body{
     .addComment{
         max-width: calc(100% - 2em);
     }
-    
-}
-.bottom-section{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1em;
-    .avatar{
-        height: 40px;
+    .bottom-section{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1em;
+        .avatar{
+            height: 40px;
+        }
     }
 }
