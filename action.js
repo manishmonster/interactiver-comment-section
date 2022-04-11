@@ -71,6 +71,25 @@ $(document).on('click','.deleteBtn', function(){
     $('.modal').toggleClass('opened');
 });
 
+$(function(){
+    $.ajax({
+        url: "generate.php",
+        type: "post",
+        success: function( data){
+            var json = JSON.parse(data);
+            var currentUser = json.currentUser;
+            var username =  currentUser.username;
+            var comments = json.comments;
+            $('.chatreply .avatar img').attr('src',currentUser.image.png);
+            var html = '';
+            $.each(comments,function(i, comment){
+                html += replyFunction(comment, username);
+            });
+
+            $('.chatting').html(html);
+        }
+    });
+});
 $.getJSON("./data.json", function(json) {
     var currentUser = json.currentUser;
     var username =  currentUser.username;
